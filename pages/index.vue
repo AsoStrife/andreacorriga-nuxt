@@ -1,0 +1,7 @@
+<template>
+
+    <LayoutHeader />
+
+
+    <!-- <LayoutFooter /> -->
+</template>
