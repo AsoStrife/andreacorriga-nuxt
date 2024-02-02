@@ -1,9 +1,7 @@
 <template>
     <LayoutHeader />
 
-    <HomePageMain />
-
-    <HomePageSimpleGallery />
+    <SkillsMain />
 
     <LayoutFooter />
 </template>

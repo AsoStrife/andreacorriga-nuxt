@@ -6,9 +6,9 @@
 
                 <a href="https://strifelab.com" title="Strifelab - Siti web, App Mobile, SEO a Cagliari ed in Sardegna" target="_blank">Made by Strifelab</a> &bull; 
 
-                <router-link to="/privacy_policy">Privacy Policy</router-link> 
+                <router-link to="/privacy_policy" title="Privacy Policy">Privacy Policy</router-link> 
             </small>
-		</div><!--//container-->
+		</div>
 	</footer>
 </template>
 

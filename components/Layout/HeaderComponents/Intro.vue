@@ -31,10 +31,10 @@
         },
         methods: {
             mouseOver: function() {
-                profilePic = constants.img.profile_real
+                this.profilePic = constants.img.profile_real
             },
             mouseLeave: function() {
-                profilePic = constants.img.profile
+                this.profilePic = constants.img.profile
             }
         }
         

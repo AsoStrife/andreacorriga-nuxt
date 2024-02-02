@@ -6,7 +6,7 @@
                 <ul id="page-nav" class="nav page-nav list-inline">
                     <span v-for="r in routes" :key="r.name">
                         <li class="nav-item">
-                            <router-link :class="getLinkClass(r.name)" :to="r.path" :title="r.name">{{r.name}}</router-link> 
+                            <router-link :class="getLinkClass(r.path)" :to="r.path" :title="r.name">{{r.name}}</router-link> 
                         </li>
                     </span>
                 </ul>
@@ -39,13 +39,13 @@
         name: 'PageVue',
         data() {
             return {
-                routes: constants.routes.filter(r => r.mainNav)
+                routes: constants.routes.filter(r => r.mainNav),
+                router: useRouter()
             }
         },
         methods: {
-            getLinkClass(currentElement){
-                let routeName = this.$router.currentRoute.value.name;
-                return routeName == currentElement ? "nav-link active" : "nav-link"
+            getLinkClass(currentPath){
+                return currentPath == this.router.currentRoute.fullPath ? "nav-link active" : "nav-link"
             }
         }
     }

@@ -1,14 +1,16 @@
 <template>
     <div class="top-bar container-fluid">
         <div class="row">
-            <ClientOnly>
+            
                 <div class="col-12 col-md-6">
                     <ul class="social list-inline">
                         
                         <span v-for="social in constants.social" :key="social.name">
                             <li class="list-inline-item">
                                 <a :href="social.url" target="_blank" :title="social.name">
-                                    <i :class="social.icon" aria-hidden="true"></i>
+                                    <ClientOnly>
+                                        <i :class="social.icon" aria-hidden="true"></i>
+                                    </ClientOnly>
                                 </a>
                             </li>
                         </span>
@@ -18,10 +20,12 @@
                 <div class="col-12 col-md-6 cv-telegram">
                     <!-- <a class="btn mr-1" :href="telegram.url" target="_blank" :title="telegram.name"><i class="fas fa-paper-plane" aria-hidden="true"></i> Telegram</a> -->
                     <a class="btn" :href="constants.meta.cv" target="_blank">
-                        <i class="fas fa-download" aria-hidden="true"></i> 
+                        <ClientOnly>
+                            <i class="fas fa-download" aria-hidden="true"></i> 
+                        </ClientOnly>
                         Curriculum Vitae </a>
                 </div>
-            </ClientOnly>
+                
         </div>
     </div>
 </template>

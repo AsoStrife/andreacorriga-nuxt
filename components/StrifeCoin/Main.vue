@@ -2,7 +2,7 @@
     <div class="container page-content">
         <div class="row">
             <div class="col-lg-12 col-md-12">
-                <h1>{{constants.strife_coin.name}}</h1>
+                <h1>{{ constants.strife_coin.name }}</h1>
 
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
@@ -15,7 +15,7 @@
                         <h3>Why should I buy this token?</h3>
                         <ul class="list-unstyled service-list">
                             <li><i class="fas fa-check"></i> Why not? </li>
-                            <li><i class="fas fa-check"></i> {{constants.strife_coin.symbol}} is shareable token and you can send it as a gift.; </li>
+                            <li><i class="fas fa-check"></i> {{constants.strife_coin.symbol}} is shareable token and you can send it as a gift; </li>
                             <li><i class="fas fa-check"></i> {{constants.strife_coin.symbol}} is great for short and long investing because yes;</li>
                             <li><i class="fas fa-check"></i> There are no partners or investors; No one will ever interfere with your rise to financial freedom; </li>
                             <li><i class="fas fa-check"></i> No seriously, you need a fifth point to buy some <strong>{{constants.strife_coin.name}}s</strong>?</li>
@@ -78,23 +78,15 @@
 </template>
 
 <script>
-    import constants from "../constants.js"
-
     export default {
-        name: 'Strife Coin',
-        components: {
-        },
-        data() {
-            return {
-                constants: constants
-            }
-        }
+        name: 'Strife Coin'
     }
 </script>
 
 <style scoped>
     th, td {
         font-size: 16px;
+        color: #FFF; 
     }
 
     .btn-pancake {

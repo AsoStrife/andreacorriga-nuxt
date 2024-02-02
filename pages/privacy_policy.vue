@@ -1,9 +1,7 @@
 <template>
     <LayoutHeader />
 
-    <HomePageMain />
-
-    <HomePageSimpleGallery />
+    <PrivacyPolicyMain />
 
     <LayoutFooter />
 </template>

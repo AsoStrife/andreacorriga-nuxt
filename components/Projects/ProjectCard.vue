@@ -12,23 +12,33 @@
                             <p v-html="project.description"></p>
                             <div class="text-right">
                                 <a :href="project.url" target="_blank" class="btn mr-2" v-if="project.url">
-                                    <i class="fa fa-globe" aria-hidden="true"></i> Website
+                                    <ClientOnly>
+                                        <i class="fa fa-globe" aria-hidden="true"></i> Website
+                                    </ClientOnly>
                                 </a>
 
                                 <a :href="project.repositoryUrl" target="_blank" class="btn mr-2" v-if="project.repositoryUrl">
-                                    <i class="fab fa-github" aria-hidden="true"></i> Repository
+                                    <ClientOnly>
+                                        <i class="fab fa-github" aria-hidden="true"></i> Repository
+                                    </ClientOnly>
                                 </a>
 
                                 <a :href="project.android" target="_blank" class="btn mr-2" v-if="project.android">
-                                    <i class="fab fa-google-play mr-2" aria-hidden="true"></i> Play Store
+                                    <ClientOnly>
+                                        <i class="fab fa-google-play mr-2" aria-hidden="true"></i> Play Store
+                                    </ClientOnly>
                                 </a>
 
                                 <a :href="project.ios" target="_blank" class="btn mr-2" v-if="project.ios">
-                                    <i class="fab fa-apple mr-2" aria-hidden="true"></i> App Store
+                                    <ClientOnly>
+                                        <i class="fab fa-apple mr-2" aria-hidden="true"></i> App Store
+                                    </ClientOnly>
                                 </a>
 
                                 <a :href="project.chrome" target="_blank" class="btn mr-2" v-if="project.chrome">
-                                    <i class="fab fa-chrome mr-2" aria-hidden="true"></i> Chrome Store
+                                    <ClientOnly>
+                                        <i class="fab fa-chrome mr-2" aria-hidden="true"></i> Chrome Store
+                                    </ClientOnly>
                                 </a>
                             </div>
                         </div>
@@ -37,15 +47,17 @@
             </div>
         </div>
     </div> <!-- row -->
+    
 </template>
 
 <script>
+
     export default {
-        name: 'Project',
-        props: {
-            project: Object
-        }
+    name: 'Project',
+    props: {
+        project: Object
     }
+}
 </script>
 
 <style scoped>

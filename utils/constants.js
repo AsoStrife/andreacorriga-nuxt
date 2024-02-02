@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 let constants = {
-    "main": {
+    main: {
         "name": "Andrea",
         "surname": "Corriga",
         "full_name": "Andrea Corriga",
@@ -10,7 +10,7 @@ let constants = {
         "second_title": " • Andrea Corriga (@AsoStrife)",
         "description": "Andrea Corriga is a Ph.D. and Software Engineer currently living in Sardinia, Italy. Passionate about sport, music, video games and programming he can be found in all social networks or video games with the username AsoStrife.",
     },
-    "meta": {
+    meta: {
         "author": "Andrea Corriga (@AsoStrife)",
         "email": "me@andreacorriga.com",
 
@@ -20,10 +20,10 @@ let constants = {
         "rating": "general",
         "cv": "https://cv.andreacorriga.com"
     },
-    "urls": {
+    urls: {
         "iris_thesis": "https://iris.unica.it/handle/11584/330467"
     },
-    "img": {
+    img: {
         "profile": "/img/profile/andrea-corriga-asostrife-profile-image.png",
         "profile_real": "/img/profile/andrea-corriga-asostrife-profile-real-image.jpg",
         "profile_200x200": "/img/profile/andrea-corriga-asostrife-profile-image-200x200.png",
@@ -32,7 +32,7 @@ let constants = {
         "favicon_72x72": "/img/favicon/favicon-72x72.png",
         "favicon_114x114": "/img/favicon/favicon-114x114.png"
     },
-    "social": [
+    social: [
         {
             "name": "Facebook",
             "url": "https://facebook.com/AsoStrife",
@@ -84,15 +84,15 @@ let constants = {
             "icon": "fab fa-paypal"
         }
     ],
-    "facebook_open_graph": {
+    facebook_open_graph: {
         "app_id": "2210608369160877",
         "type": "profile",
         "url": "https://andreacorriga.com/",
         "image": "https://andreacorriga.com/img/profile/andrea-corriga-asostrife-profile-image-200x200.png",
         "description": "Andrea Corriga is a Ph.D and Software Engineer currently living in Sardinia, Italy. Passionate about sport, music, video games and programming he can be found in all social networks or video games with the username AsoStrife."
     },
-    "skills": ['C', 'C++', 'C#', 'PHP', 'Java', 'Javascript', 'Node', 'Python', 'HTML5', 'CSS3', 'Codeigniter', 'Springboot', 'Framework7', 'Vue', 'jQuery', 'Vite', 'Capacitor', 'Electron', 'Bootstrap', 'Tailwind', 'Flask', 'FastAPI', 'Strapi', 'Mysql', 'MongoDB', 'Sass', 'Less', 'Machine Learning', 'Reinforcement Learning', 'Generative AI', 'Keras', 'Tensorflow', 'Scikit-learn', 'Pandas', 'Numpy','Microsoft Azure', 'Amazon AWS', 'Google Cloud Platform', 'Firebase'],
-    "projects": [
+    skills: ['C', 'C++', 'C#', 'PHP', 'Java', 'Javascript', 'Node', 'Python', 'HTML5', 'CSS3', 'Codeigniter', 'Springboot', 'Framework7', 'Vue', 'jQuery', 'Vite', 'Capacitor', 'Electron', 'Bootstrap', 'Tailwind', 'Flask', 'FastAPI', 'Strapi', 'Mysql', 'MongoDB', 'Sass', 'Less', 'Machine Learning', 'Reinforcement Learning', 'Generative AI', 'Keras', 'Tensorflow', 'Scikit-learn', 'Pandas', 'Numpy','Microsoft Azure', 'Amazon AWS', 'Google Cloud Platform', 'Firebase'],
+    projects: [
         // {
         //     name: "Ayco",
         //     img: "/img/projects/ayco-logo.png",
@@ -133,7 +133,7 @@ let constants = {
             chrome: "https://chromewebstore.google.com/detail/rewards-search-automator/paohfpjfibchbhbkdnlhjpfblafifehg?hl=it"
         }
     ],
-    "strife_coin": {
+    strife_coin: {
         "name": "Strife Coin",
         "symbol": "$ASO",
         "icon": "/img/strife_coin/logo_32x32.png",
@@ -145,7 +145,7 @@ let constants = {
         "circulatin_supply": 300000000,
         "decimals": 18,
     },
-    "gallery": [
+    gallery: [
         {
             largeURL: '/img/gallery/01-foto-con-ciorts.jpg',
             thumbnailURL: '/img/gallery/thumbs/01-foto-con-ciorts.jpg',
@@ -196,7 +196,7 @@ let constants = {
             caption: "As Zack grew up he developed various interests including: the bathroom sink, gummy balls and birds. His favourite sport is fly hunting."
         }
     ],
-    "repositories": [
+    repositories: [
         {
             "name": "BlockAPI: Blockchain analytics API",
             "url": "https://github.com/blockchain-unica/blockapi"
