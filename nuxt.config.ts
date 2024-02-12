@@ -41,6 +41,7 @@ export default defineNuxtConfig({
     ],
     plugins: [
         '@/plugins/vue-gtag',
+        "@/plugins/usePinia"
     ],
     ssr: true,
     site: {

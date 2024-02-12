@@ -251,6 +251,9 @@ let constants = {
     ],
     strapi: {
         film: "https://strapi.andreacorriga.com/api/films?"
+    },
+    themoviedb: {
+        imageUrl: "https://image.tmdb.org/t/p/w500/"
     }
 }
 
