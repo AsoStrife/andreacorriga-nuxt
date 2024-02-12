@@ -229,6 +229,11 @@ let constants = {
             mainNav: true
         },
         {
+            path: '/movies',
+            name: 'Movies',
+            mainNav: true
+        },
+        {
             path: '/strife_coin',
             name: 'Strife Coin',
             mainNav: true
@@ -243,7 +248,10 @@ let constants = {
             name: 'Privacy Policy',
             mainNav: false
         }
-    ]
+    ],
+    strapi: {
+        film: "https://strapi.andreacorriga.com/api/films?"
+    }
 }
 
 export default constants

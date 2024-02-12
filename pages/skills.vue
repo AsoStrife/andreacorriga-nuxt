@@ -2,7 +2,7 @@
     <Head>
         <Title> {{ title }}</Title>
 
-        <Link rel="sitemap" :href="requestUrl.origin + '/' + 'sitemap.xml'" type="application/xml" />
+        <Link rel="sitemap" :href="requestUrl.origin + '/sitemap.xml'" type="application/xml" />
         <Link rel="canonical" :href="requestUrl.href"/>
 
         <Meta name="description" :content="description" />
@@ -31,7 +31,7 @@
 export default {
     data() {
         return {
-            title: "Skills" + constants.second_title, 
+            title: "Skills" + constants.main.second_title, 
             description: "Andrea Corriga is a Ph.D. and Software Engineer currently living in Sardinia, Italy. Passionate about sport, music, video games and programming he can be found in all social networks or video games with the username AsoStrife.", 
 
             nuxtApp: useNuxtApp(),

@@ -40,7 +40,7 @@ export default defineNuxtConfig({
         'nuxt-simple-sitemap'
     ],
     plugins: [
-        '@/plugins/vue-gtag'
+        '@/plugins/vue-gtag',
     ],
     ssr: true,
     site: {
