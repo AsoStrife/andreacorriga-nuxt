@@ -61,7 +61,7 @@
 </script>
 
 <style scoped>
-    .card h1{
+    .card h1 {
         margin-top: 0;
         margin-bottom: 0;
         font-size: 2.5rem

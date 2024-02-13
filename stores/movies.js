@@ -10,7 +10,8 @@ export const useMoviesStore = defineStore('moviesStore', {
             movies: [],
             page: 1,
             pageCount: 1,
-            pageSize: 20
+            pageSize: 20,
+            querySearch: ''
         }
     },
     getters: {
@@ -24,10 +25,30 @@ export const useMoviesStore = defineStore('moviesStore', {
             
             this.movies = loadMore ? this.movies.concat(response.data) : response.data
 
+            this.page = loadMore ? this.page : 1
+            
             this.pageCount = response.meta.pagination.pageCount
         },
         getQuery() {
-            return qs.stringify(
+            if(this.querySearch != ''){
+                return qs.stringify(
+                    {
+                        filters: {
+                            title: {
+                                $containsi: this.querySearch,
+                            },
+                        },
+                        pagination: {
+                            page: this.page,
+                            pageSize: this.pageSize
+                        },
+                        sort: ['title']
+                    }, {
+                        encodeValuesOnly: true,
+                    })
+            }
+            else {
+                return qs.stringify(
                 {
                     pagination: {
                         page: this.page,
@@ -37,6 +58,7 @@ export const useMoviesStore = defineStore('moviesStore', {
                 }, {
                     encodeValuesOnly: true,
                 })
+            }
         },
         addPageCount() {
             this.pageCount++
@@ -58,6 +80,9 @@ export const useMoviesStore = defineStore('moviesStore', {
         }, 
         isScrollable() {
             return this.page < this.pageCount
+        },
+        setQuerySearch(str) {
+            this.querySearch = str
         }
     }
 })
