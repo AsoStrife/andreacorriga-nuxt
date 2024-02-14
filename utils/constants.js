@@ -15,6 +15,7 @@ let constants = {
         email: "me@andreacorriga.com",
         keywords: "Andrea, Corriga, Aso, AsoStrife, Cloud, CloudAso, Microsoft, Student, Partner, MSP, Portfolio, Personal Website, Webmaster, Web, Developer, PHP, Javascript, Java, Keras, Vue, Crypto, Coin, Tensorflow, Strapi,  Python, Streamer, Twitch, University, Master, Graduate, Computer Science, Coding",
         robots: "index, follow",
+        robotsNO: "noindex, nofollow",
         language: "en",
         rating: "general",
         cv: "https://cv.andreacorriga.com"
@@ -32,21 +33,21 @@ let constants = {
         favicon_114x114: "/img/favicon/favicon-114x114.png"
     },
     social: [
-        {
-            name: "Facebook",
-            url: "https://facebook.com/AsoStrife",
-            icon: "fab fa-facebook"
-        },
+        // {
+        //     name: "Facebook",
+        //     url: "https://facebook.com/AsoStrife",
+        //     icon: "fab fa-facebook"
+        // },
         {
             name: "Instagram",
             url: "https://instagram.com/AsoStrife",
             icon: "fab fa-instagram"
         },
-        {
-            name: "Twitter",
-            url: "https://twitter.com/AsoStrife",
-            icon: "fab fa-twitter"
-        },
+        // {
+        //     name: "Twitter",
+        //     url: "https://twitter.com/AsoStrife",
+        //     icon: "fab fa-twitter"
+        // },
         {
             name: "Github",
             url: "https://github.com/AsoStrife",
@@ -62,13 +63,13 @@ let constants = {
         //     url: "https://t.me/AsoStrife",
         //     icon: "fab fa-telegram"
         // },
+        // {
+        //     name: "Twitch",
+        //     url: "https://www.twitch.tv/asostrife",
+        //     icon: "fab fa-twitch"
+        // },
         {
-            name: "Twitch",
-            url: "https://www.twitch.tv/asostrife",
-            icon: "fab fa-twitch"
-        },
-        {
-            name: "Amazon",
+            name: "Amazon Wishlist",
             url: "https://www.amazon.it/hz/wishlist/ls/1WJMAAM7SOJQZ/ref=nav_wishlist_lists_1?_encoding=UTF8&type=wishlist",
             icon: "fab fa-amazon"
         },
@@ -149,28 +150,28 @@ let constants = {
             thumbnailURL: '/img/gallery/thumbs/01-foto-con-ciorts.jpg',
             width: 1920,
             height: 1246,
-            caption: "One of the first photos I have with <strong>Ninu Ciortis</strong>. This photo dates back to the early 2000s, when I was in elementary school."
+            caption: "One of the first photos I have with <strong>Ciorts</strong>. This photo dates back to the early 2000s, when I was in elementary school."
         },
         {
             largeURL: '/img/gallery/02-collage_ciorts.jpg',
             thumbnailURL: '/img/gallery/thumbs/02-collage_ciorts.jpg',
             width: 1920,
             height: 1920,
-            caption: "Collage for the 20th anniversary of <strong>Ninu Ciortis</strong>"
+            caption: "Collage for the 20th anniversary of <strong>Ciorts</strong>"
         },
         {
             largeURL: '/img/gallery/03-foto-con-ciorts.jpg',
             thumbnailURL: '/img/gallery/thumbs/03-foto-con-ciorts.jpg',
             width: 1920,
             height: 1080,
-            caption: "Random photo with Ninu. One of the later shots has been the inspiration for the profile photo I use on all social media."
+            caption: "Random photo with Ciorts. One of the later shots has been the inspiration for the profile photo I use on all social media."
         },
         {
             largeURL: '/img/gallery/04-laurea-con-ciorts.jpg',
             thumbnailURL: '/img/gallery/thumbs/04-laurea-con-ciorts.jpg',
             width: 1920,
             height: 1444,
-            caption: "Day of Bachelor's Degree."
+            caption: "Bachelor's Degree."
         },
         {
             largeURL: '/img/gallery/05-home-gym.jpg',
@@ -184,7 +185,7 @@ let constants = {
             thumbnailURL: '/img/gallery/thumbs/06-zack-sepuollo.jpg',
             width: 1920,
             height: 1920,
-            caption: "He's <strong>Zack Sepuollo Ichiero Lëpi Giorgio Strife</strong> <small>(10/10/2020)</small>. My seconds cat. He has more names than years of life."
+            caption: "He's <strong>Zack Sepuollo Ichiero Lëpi Giorgio Flavio Strife</strong> <small>(10/10/2020)</small>. My seconds cat. He has more names than years of life."
         },
         {
             largeURL: '/img/gallery/07-zack-sepuollo.jpg',

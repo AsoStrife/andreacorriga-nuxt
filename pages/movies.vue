@@ -32,7 +32,7 @@ export default {
     data() {
         return {
             title: "Movies Collection" + constants.main.second_title, 
-            description: "Andrea Corriga is a Ph.D. and Software Engineer currently living in Sardinia, Italy. Passionate about sport, music, video games and programming he can be found in all social networks or video games with the username AsoStrife.", 
+            description: "Below is Andrea's Blu-rays & DVDs collection. They have only seen some of the films listed in this catalog and do not yet own others.", 
 
             nuxtApp: useNuxtApp(),
             requestUrl: useRequestURL()

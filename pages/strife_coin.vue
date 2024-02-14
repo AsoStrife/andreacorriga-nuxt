@@ -32,7 +32,7 @@ export default {
     data() {
         return {
             title: "Strife Coin" + constants.main.second_title, 
-            description: "Andrea Corriga is a Ph.D. and Software Engineer currently living in Sardinia, Italy. Passionate about sport, music, video games and programming he can be found in all social networks or video games with the username AsoStrife.", 
+            description: "$ASO is a personal token centered around Andrea Corriga, in art AsoStrife, Alpha and Omega of this Meme Token.", 
 
             nuxtApp: useNuxtApp(),
             requestUrl: useRequestURL()

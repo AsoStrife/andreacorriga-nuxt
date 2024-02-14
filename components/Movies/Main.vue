@@ -5,9 +5,10 @@
         <div class="row">
             <div class="col-lg-12 col-md-12">
                 <h1>Movies</h1>
+                <p>Below is my Blu-rays & DVDs collection. I have only seen some of the films listed in this catalog and do not yet own.</p>
             </div>
         </div>
-
+        
         <div class="row">
             <div class="col-lg-12 mb-4">
                 <input type="text" class="form-control" v-model="querySearch" placeholder="Search movie by title" @keydown="search">

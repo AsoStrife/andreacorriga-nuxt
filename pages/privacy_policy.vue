@@ -8,7 +8,7 @@
         <Meta name="description" :content="description" />
         <Meta name="author" :content="constants.meta.author" />	
         <Meta name="keywords" :lang="constants.meta.language" :content="constants.meta.keywords" />
-        <Meta name="robots" :content="constants.meta.robots" />
+        <Meta name="robots" :content="constants.meta.robotsNO" />
         <Meta name="language" :content="constants.meta.language" />
         <Meta name="rating" :content="constants.meta.rating" />
 

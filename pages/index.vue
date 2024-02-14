@@ -34,7 +34,7 @@ export default {
     data() {
         return {
             title: "Andrea Corriga (@AsoStrife) • Ph.D. and Software Engineer", 
-            description: "Andrea Corriga is a Ph.D. and Software Engineer currently living in Sardinia, Italy. Passionate about sport, music, video games and programming he can be found in all social networks or video games with the username AsoStrife.", 
+            description: "Andrea Corriga is a Ph.D., Manager and Software Engineer currently living in Sardinia, Italy. Passionate about sport, music, video games and programming he can be found in all social networks or video games with the username AsoStrife.", 
 
             nuxtApp: useNuxtApp(),
             requestUrl: useRequestURL()
