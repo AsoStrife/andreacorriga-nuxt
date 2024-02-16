@@ -17,12 +17,13 @@ import type { ClientOnly } from '#build/components';
             </div>
 
             <div class="col-12 col-lg-2 col-md-2">
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-0339695948238346"
-                    data-ad-slot="2175628198"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true"></ins>
+                <ClientOnly>
+                    <ins class="adsbygoogle"
+                        style="display:block"
+                        data-ad-slot="2175628198"
+                        data-ad-format="auto"
+                        data-full-width-responsive="true"></ins>
+                </ClientOnly>
             </div>
 
         </div>
@@ -39,15 +40,6 @@ import type { ClientOnly } from '#build/components';
 <script>
 export default {
     mounted() {
-        let adsbygoogle = window.adsbygoogle || []
-    },
-    head: {
-        script: [
-            {
-                src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0339695948238346',
-                crossorigin: 'anonymous'
-            }
-        ]
     }
 }
 </script>
