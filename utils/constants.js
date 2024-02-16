@@ -124,7 +124,7 @@ let constants = {
         {
             name: "Rewards Search Automator",
             img: "/img/projects/bing-search-automator-logo.png",
-            description: "An extension for Google Chrome & Microsoft Edge to help out users who use <strong>Microsoft Rewards</strong>. This extension automatically performs Bing Searches, with 500ms between searches.",
+            description: "An extension for Google Chrome & Microsoft Edge to help out users who use <strong>Microsoft Rewards</strong>. This extension automatically performs Bing Searches.",
             repositoryUrl: "https://github.com/AsoStrife/Bing-Search-Automator",
             url: "",
             android: "",
@@ -255,7 +255,37 @@ let constants = {
     },
     themoviedb: {
         imageUrl: "https://image.tmdb.org/t/p/w500/"
-    }
+    },
+    rewardsDiscoverMore: [
+        {
+            name: "Strifelab",
+            img: "/img/projects/strifelab-logo.png",
+            description: "My company, specialized in the development of websites, mobile applications for Android and iOS, SEO and social media management in Sardinia, Italy",
+            url: "https://strifelab.com",
+            android: "",
+            ios: "",
+            chrome: ""
+        },
+        {
+            name: "Andrea Corriga",
+            img: "/img/projects/andreacorriga-logo.png",
+            description: "The personal website, where you can find information about me, my professional skills and more",
+            url: "https://andreacorriga.com",
+            android: "",
+            ios: "",
+            chrome: ""
+        },
+        {
+            name: "Rewards Search Automator",
+            img: "/img/projects/bing-search-automator-logo.png",
+            description: "An extension for Google Chrome & Microsoft Edge to help out users who use <strong>Microsoft Rewards</strong>. This extension automatically performs Bing Searches.",
+            repositoryUrl: "https://github.com/AsoStrife/Bing-Search-Automator",
+            url: "",
+            android: "",
+            ios: "",
+            chrome: "https://chromewebstore.google.com/detail/rewards-search-automator/paohfpjfibchbhbkdnlhjpfblafifehg?hl=it"
+        }
+    ]
 }
 
 export default constants

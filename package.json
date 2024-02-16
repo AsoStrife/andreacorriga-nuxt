@@ -16,13 +16,14 @@
         "vue-router": "^4.2.5"
     },
     "dependencies": {
+        "@nuxtjs/google-adsense": "^3.0.0",
         "@vueuse/core": "^10.7.2",
         "axios": "^1.6.7",
         "nuxt-simple-sitemap": "^4.4.1",
         "photoswipe": "^5.2.2",
         "photoswipe-dynamic-caption-plugin": "^1.1.1",
+        "pinia": "^2.1.6",
         "qs": "^6.11.2",
-        "vue-gtag": "^2.0.1",
-        "pinia": "^2.1.6"
+        "vue-gtag": "^2.0.1"
     }
 }
