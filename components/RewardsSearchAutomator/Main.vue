@@ -1,7 +1,3 @@
-
-import type { Head } from '#build/components';
-
-import type { ClientOnly } from '#build/components';
 <template>
     <div class="container page-content">
         <div class="row">
