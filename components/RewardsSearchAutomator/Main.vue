@@ -11,7 +11,10 @@
             <div class="col-12 col-lg-3 col-md-3">
                 <h3 class="mt-5 mb-3">ADS</h3>
                 <ClientOnly>
-                    <ins class="adsbygoogle" style="display:block" data-ad-slot="2175628198" data-ad-format="auto"
+                    <ins style="display:block"
+                        data-ad-client="ca-pub-0339695948238346"
+                        data-ad-slot="2175628198"
+                        data-ad-format="auto"
                         data-full-width-responsive="true"></ins>
                 </ClientOnly>
             </div>
