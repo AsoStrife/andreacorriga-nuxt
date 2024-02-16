@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    devtools: { enabled: true },
+    devtools: { enabled: false },
     app: {
         head: {
             meta: [
@@ -33,12 +33,12 @@ export default defineNuxtConfig({
                 { src: '/js/jquery.min.js' },
                 { src: '/js/bootstrap.min.js' },
                 { src: '/js/fontawesome-all.min.js' },
-                // {
-                //     "src": '/js/adsbygoogle.js?client=ca-pub-0339695948238346',
-                //     "data-ad-client": 'ca-pub-0339695948238346',
-                //     "async": true,
-                //     "crossorigin": "anonymous"
-                // },
+                {
+                    "src": 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
+                    "data-ad-client": 'ca-pub-0339695948238346',
+                    "async": true,
+                    "crossorigin": "anonymous"
+                },
                 // { src: '/js/adsense.js' },
             ]
         }
