@@ -11,7 +11,8 @@ export const useMoviesStore = defineStore('moviesStore', {
             page: 1,
             pageCount: 1,
             pageSize: 20,
-            querySearch: ''
+            querySearch: '',
+            selectedOption: 'all'
         }
     },
     getters: {
@@ -20,51 +21,81 @@ export const useMoviesStore = defineStore('moviesStore', {
 
     actions: {
         async getMovies(loadMore = false) {
-            
+
+            if(!loadMore) {
+                this.reset()
+            }
+
             let response = ( await axios.get(constants.strapi.film + this.getQuery())).data
             
             this.movies = loadMore ? this.movies.concat(response.data) : response.data
 
-            this.page = loadMore ? this.page : 1
-            
+        
             this.pageCount = response.meta.pagination.pageCount
         },
         getQuery() {
+            let query = {
+                pagination: {
+                    page: this.page,
+                    pageSize: this.pageSize
+                },
+                sort: ['title']
+            }
+
+            let filters = {
+                filters: {}
+            }
+
             if(this.querySearch != ''){
-                return qs.stringify(
-                    {
-                        filters: {
-                            title: {
-                                $containsi: this.querySearch,
+                
+                filters.filters.title = {
+                    $contains: this.querySearch,
+                }
+                    
+            }
+            
+            filters.filters = {...filters.filters, ...this.getOwnedFilter() }
+
+            query = { ...query, ...filters }
+
+            return qs.stringify(query, { encodeValuesOnly: true } )
+        },
+        getOwnedFilter() {
+            if(this.selectedOption == 'owned') {
+                return { 
+                    $or: [
+                        {
+                            dvd: {
+                                $eq: true
                             },
                         },
-                        pagination: {
-                            page: this.page,
-                            pageSize: this.pageSize
-                        },
-                        sort: ['title']
-                    }, {
-                        encodeValuesOnly: true,
-                    })
+                        {
+                            bluray: {
+                                $eq: true
+                            }
+                        }, {
+                            bluray4k: {
+                                $eq: true
+                            }
+                        }
+                    ]
+                }
             }
             else {
-                return qs.stringify(
-                {
-                    pagination: {
-                        page: this.page,
-                        pageSize: this.pageSize
-                    },
-                    sort: ['title']
-                }, {
-                    encodeValuesOnly: true,
-                })
+                return {}
             }
-        },
+        }, 
         addPageCount() {
             this.pageCount++
         },
         addPage() {
             this.page++
+        },
+        reset() {
+            this.resetPageCount()
+            this.resetMovies()
+            this.resetPage()
+            this.resetPageSize()
         },
         resetPageCount() {
             this.pageCount = 1
@@ -83,6 +114,9 @@ export const useMoviesStore = defineStore('moviesStore', {
         },
         setQuerySearch(str) {
             this.querySearch = str
+        }, 
+        setSelectedOption(str) {
+            this.selectedOption = str
         }
     }
 })
