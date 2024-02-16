@@ -32,7 +32,13 @@ export default defineNuxtConfig({
             script: [
                 { src: '/js/jquery.min.js' },
                 { src: '/js/bootstrap.min.js' },
-                { src: '/js/fontawesome-all.min.js' }
+                { src: '/js/fontawesome-all.min.js' },
+                {
+                    src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0339695948238346',
+                    crossorigin: 'anonymous',
+                    async: true, 
+                    client: 'ca-pub-0339695948238346'
+                }
             ]
         }
     },
