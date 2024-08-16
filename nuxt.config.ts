@@ -45,7 +45,7 @@ export default defineNuxtConfig({
     },
     modules: [
         'nuxt-simple-sitemap'
-    ],
+    ],    
     plugins: [
         '@/plugins/vue-gtag',
         "@/plugins/usePinia"
@@ -53,5 +53,10 @@ export default defineNuxtConfig({
     ssr: true,
     site: {
         url: 'https://andreacorriga.com',
+    },
+    runtimeConfig: {
+        public: {
+            gtagId: 'G-2YXJPV5HWX',
+        }
     }
 })
