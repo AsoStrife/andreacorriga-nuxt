@@ -90,21 +90,42 @@ let constants = {
         url: "https://andreacorriga.com/",
         image: "https://andreacorriga.com/img/profile/andrea-corriga-asostrife-profile-image-200x200.png",
     },
-    skills: ['C', 'C++', 'C#', 'PHP', 'Java', 'Javascript', 'Node', 'Python', 'HTML5', 'CSS3', 'Codeigniter', 'Springboot', 'Framework7', 'Vue', 'jQuery', 'Vite', 'Capacitor', 'Electron', 'Bootstrap', 'Tailwind', 'Flask', 'FastAPI', 'Strapi', 'Mysql', 'MongoDB', 'Sass', 'Less', 'Machine Learning', 'Reinforcement Learning', 'Generative AI', 'Keras', 'Tensorflow', 'Scikit-learn', 'Pandas', 'Numpy','Microsoft Azure', 'Amazon AWS', 'Google Cloud Platform', 'Firebase'],
+    skills: ['Node.js (senior)', 'Javascript', 'Vue', 'Bootstrap', 'Tailwind', 'Full-stack development', 'PHP', 'Codeigniter', 'Python', 'Machine Learning', 'Generative AI', 'Large Language Models (LLMs)', 'Agent systems', 'C', 'C++', 'C#', 'HTML5', 'CSS3', 'Framework7', 'Vite', 'Capacitor', 'Electron', 'Strapi', 'Flask', 'FastAPI', 'Mysql', 'MongoDB', 'Sass', 'Less', 'Keras', 'Tensorflow', 'Scikit-learn', 'Pandas', 'Numpy', 'Microsoft Azure', 'Amazon AWS', 'Google Cloud Platform', 'Firebase', 'Game Development (2D rpgjs, 3D Unreal)'],
     projects: [
-        // {
-        //     name: "Ayco",
-        //     img: "/img/projects/ayco-logo.png",
-        //     description: "<strong>Ayco</strong> is a free app for <strong>Android</strong> and <strong>iOS</strong> for ordering Sushi from All You Can Eat restaurants. Ayco is simple and fast, allowing you to consult the menù of All You Can Eat restaurants near you at any time of the day. Ayco allows you to save restaurant menus and your favorite dishes offline.",
-        //     url: "https://ayco.app",
-        //     android: "https://play.google.com/store/apps/details?id=it.webenterprises.ayco",
-        //     ios: "https://apps.apple.com/us/app/ayco/id1576412037",
-        //     chrome: ""
-        // },
+        {
+            name: "FFstory",
+            img: "/img/projects/ffstory-logo.jpg",
+            description: "<strong>FFStory</strong> started in 2009 as a passion project dedicated to the Final Fantasy series and has grown into a detailed online guide for fans worldwide. Today, the website remains online as a personal archive and a reminder of a project created at the age of 16, and it is no longer actively maintained or updated.",
+            repositoryUrl: "",
+            url: "https://ffstory.it",
+            android: "",
+            ios: "",
+            chrome: ""
+        },
+        {
+            name: "Rawe Ceek",
+            img: "/img/projects/rawe-ceek-logo.jpg",
+            description: "<strong>Rawe Ceek</strong> is an unofficial Formula 1 companion app designed to be fast, lightweight, and distraction-free. It provides essential race information such as upcoming Grand Prix countdowns, full weekend schedules, session results, and updated driver and constructor standings. Built with a minimalist, ad-free approach, Rawe Ceek focuses on delivering clear and efficient access to Formula 1 data without unnecessary features.",
+            repositoryUrl: "",
+            url: "",
+            android: "https://play.google.com/store/apps/details?id=com.strifelab.raweceek",
+            ios: "",
+            chrome: ""
+        },
+        {
+            name: "Mark.app",
+            img: "/img/projects/markapp-logo.png",
+            description: "<strong>Mark.app</strong>  is a free, open‑source desktop Markdown editor built with Electron, designed for fast and efficient writing with support for both WYSIWYG and source‑view editing. It provides a dual‑column interface where users can write Markdown and immediately see rendered output side‑by‑side, streamlining the editing process. The app includes common editor features such as syntax highlighting, intuitive formatting controls, and cross‑platform support for Windows, macOS, and Linux. Mark.app is ideal for users who want a lightweight and powerful Markdown editor without unnecessary complexity.",
+            repositoryUrl: "https://github.com/AsoStrife/Markapp",
+            url: "",
+            android: "",
+            ios: "",
+            chrome: ""
+        },
         {
             name: "Unicapp",
             img: "/img/projects/unicapp-logo.png",
-            description: "<strong>Unicapp</strong> is a free app for <strong>Android</strong> and <strong>iOS</strong> for University Students. With Unicapp, students can view their university records, view the fees they must pay, calculate their grade point average and book exams. Unicapp support more than 20 Italian Universities.",
+            description: "<strong>Unicapp</strong> is a free app for <strong>Android</strong> and <strong>iOS</strong> designed for university students. With Unicapp, students can access their academic records, check outstanding fees, calculate their grade point average, and book exams. Unicapp supports over 20 Italian universities.",
             repositoryUrl: "https://github.com/AsoStrife/Unicapp",
             url: "",
             android: "https://play.google.com/store/apps/details?id=com.moapps.unicapp",
@@ -114,7 +135,7 @@ let constants = {
         {
             name: "My Movies",
             img: "/img/projects/my-movies-logo.png",
-            description: "This repository is a part of the <strong>My Movies App project</strong>. <strong>My movies</strong> is a simple application to monitor which movies you have seen and which you own in 4k blu ray, blu ray, dvd and vhs. It's open source both Front-End and Back-End repository.",
+            description: "This repository is part of a <strong>personal project, My Movies App</strong>. <strong>My Movies</strong> is a simple app I created to keep track of the movies I own in 4K Blu-ray, Blu-ray, DVD, and VHS, as well as the ones I have already watched. Both the front-end and back-end of the app are open source. You can view the public list of movies here: <a href=\"http://andreacorriga.com/movies\" target=\"_blank\">My Movies Page</a>.",
             repositoryUrl: "https://github.com/AsoStrife/My-Movies-F7-Vue",
             url: "",
             android: "",
@@ -124,7 +145,7 @@ let constants = {
         {
             name: "Rewards Search Automator",
             img: "/img/projects/bing-search-automator-logo.png",
-            description: "An extension for Google Chrome & Microsoft Edge to help out users who use <strong>Microsoft Rewards</strong>. This extension automatically performs Bing Searches.",
+            description: "An extension for Google Chrome and Microsoft Edge that helps users maximize their <strong>Microsoft Rewards</strong> points by automating daily Bing searches. This tool performs realistic, customizable searches in the background so you can earn search points effortlessly without manual input. It runs securely in your browser, supports both desktop and mobile search emulation, and is completely free and open source. Built to save time and simplify the process of earning rewards points with Microsoft Rewards.",
             repositoryUrl: "https://github.com/AsoStrife/Bing-Search-Automator",
             url: "",
             android: "",
@@ -150,49 +171,49 @@ let constants = {
             thumbnailURL: '/img/gallery/thumbs/01-foto-con-ciorts.jpg',
             width: 1920,
             height: 1246,
-            caption: "One of the first photos I have with <strong>Ciorts</strong>. This photo dates back to the early 2000s, when I was in elementary school."
+            caption: "One of the first photos I have with <strong>Ciorts</strong>. This dates back to the early 2000s, when I was in elementary school."
         },
         {
             largeURL: '/img/gallery/02-collage_ciorts.jpg',
             thumbnailURL: '/img/gallery/thumbs/02-collage_ciorts.jpg',
             width: 1920,
             height: 1920,
-            caption: "Collage for the 20th anniversary of <strong>Ciorts</strong>"
+            caption: "Collage celebrating the 20th anniversary of <strong>Ciorts</strong>."
         },
         {
             largeURL: '/img/gallery/03-foto-con-ciorts.jpg',
             thumbnailURL: '/img/gallery/thumbs/03-foto-con-ciorts.jpg',
             width: 1920,
             height: 1080,
-            caption: "Random photo with Ciorts. One of the later shots has been the inspiration for the profile photo I use on all social media."
+            caption: "A candid photo with Ciorts. One of the later shots inspired the profile picture I use across social media."
         },
         {
             largeURL: '/img/gallery/04-laurea-con-ciorts.jpg',
             thumbnailURL: '/img/gallery/thumbs/04-laurea-con-ciorts.jpg',
             width: 1920,
             height: 1444,
-            caption: "Bachelor's Degree."
+            caption: "Ciorts wearing the laurel wreath from my Bachelor's degree ceremony."
         },
         {
             largeURL: '/img/gallery/05-home-gym.jpg',
             thumbnailURL: '/img/gallery/thumbs/05-home-gym.jpg',
             width: 1920,
             height: 1440,
-            caption: "My personal home gym: the famous <strong>AsoStrife Towe Gym</strong>, built in my garage."
+            caption: "My personal home gym: the famous <strong>AsoStrife Tower Gym</strong>, built in my garage."
         },
         {
             largeURL: '/img/gallery/06-zack-sepuollo.jpg',
             thumbnailURL: '/img/gallery/thumbs/06-zack-sepuollo.jpg',
             width: 1920,
             height: 1920,
-            caption: "He's <strong>Zack Sepuollo Ichiero Lëpi Giorgio Flavio Strife</strong> <small>(10/10/2020)</small>. My seconds cat. He has more names than years of life."
+            caption: "He's <strong>Zack Sepuollo Lëpi Lecuona Ichero Giorgio Lafio Calogero Flavio Viverna Strife</strong> <small>(10/10/2020)</small>. This cat has more names than years of life."
         },
         {
             largeURL: '/img/gallery/07-zack-sepuollo.jpg',
             thumbnailURL: '/img/gallery/thumbs/07-zack-sepuollo.jpg',
             width: 922,
             height: 2000,
-            caption: "As Zack grew up he developed various interests including: the bathroom sink, gummy balls and birds. His favourite sport is fly hunting."
+            caption: "As Zack grew up he developed many interests: the bathroom sink, gummy balls and birds. His favourite sport is hunting flies."
         }
     ],
     repositories: [
@@ -201,15 +222,11 @@ let constants = {
             url: "https://github.com/blockchain-unica/blockapi"
         },
         {
-            name: "Computer Vision Project",
+            name: "Computer Vision - Face Recognition Project",
             url: "https://github.com/AsoStrife/Computer-Vision-Project"
         },
         {
-            name: "Framework7 Facebook Login",
-            url: "https://github.com/AsoStrife/Framework7-Facebook-Login"
-        },
-        {
-            name: "Delaunay Triangulation",
+            name: "Delaunay Triangulation c++ Implementation",
             url: "https://github.com/AsoStrife/Delaunay-Triangulation"
         }
     ],

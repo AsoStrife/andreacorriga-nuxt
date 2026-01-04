@@ -3,16 +3,16 @@
         <div class="row">
             <div class="col-md-12">
                 <h1>Gallery</h1>
-                <p>I'm not a guy who takes a lot of shots, so finding the right photos to put here has been a challenge. Reading
-                    a wall of text can be boring, so I'll leave here a couple of photos that can briefly sum up my love for my
-                    cats, my passions and can show you my unphotogenic face.</p>
+                <p>I'm not someone who takes many photos, so choosing what to include here was a challenge. Rather than
+                    a wall of text, I've added a few photos that briefly capture my cats, my interests, and my
+                    occasionally unphotogenic face.</p>
 
             </div>
         </div>
         <div class="row" id="home-gallery">
             <div class="col-4 col-lg-2 col-md-2" v-for="(image, key) in constants.gallery" :key="key">
-                <a :href="image.largeURL" :data-pswp-width="image.width" :data-pswp-height="image.height" target="_blank"
-                    rel="noreferrer">
+                <a :href="image.largeURL" :data-pswp-width="image.width" :data-pswp-height="image.height"
+                    target="_blank" rel="noreferrer">
                     <img :src="image.thumbnailURL" alt="" class="img-thumbnail img-fluid d-block mb-4" />
                     <span class="pswp-caption-content"> <span v-html="image.caption" /> </span>
                 </a>
